@@ -1,0 +1,16 @@
+#!/bin/bash
+
+a=10
+b=20
+
+# Three diferent ways o performing addition
+echo $((a+b))   
+echo $[a+b]
+echo $(expr $a + $b)
+
+
+read -p "Enter a number:" a1
+read -p "Enter another number:" a2
+echo "The addition of $a1 and $a2 is "$((a1+a2))
+
+

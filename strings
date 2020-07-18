@@ -1,0 +1,25 @@
+#!/bin/bash
+
+read -p "Enter a string value:" st1
+read -p "Enter another string value:" st2
+
+if [ $st1 > $st2 ]
+then
+echo "$st1 is greater than $st2"
+
+elif [ $st1 < st2 ]
+then
+echo "$st1 is lesser than $st2"
+
+else
+echo "Both the strings are equal"
+fi
+
+
+s1="bright"
+s2="sky"
+
+s=$s1$s2   # concatenation of two string values
+echo $s    
+echo ${s1^}  # capitalizing first character of the string
+echo ${s1^^} # converting the string to uppercase

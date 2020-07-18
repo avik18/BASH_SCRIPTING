@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#EXAMPLE 1
+
+function call()
+{
+echo "Welcome to scripting"
+}
+
+call  # CALLING THE FUNCTION BLOCK
+
+#EXAMPLE 2 LOCAL & GLOBAL VARIABLES
+
+x=14          # GLOBAL VARIABLE
+y="CODING"    #  GLOBAL VARIABLE
+z='BASH'      #  GLOBAL VARIABLE
+
+function local()
+{
+var='AUTOMATION'    # LOCAL VARIABLE
+echo $var
+}
+
+
+echo $x
+echo $y
+echo $z
+
+local
+
+# ASSIGNING VARIABLES
+
+function variables()
+{
+echo $1 $2 $3
+}
+
+variables THIS IS AWESOME  
